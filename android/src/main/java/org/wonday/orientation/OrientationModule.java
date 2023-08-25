@@ -308,7 +308,7 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Ori
 
         final Activity activity = getCurrentActivity();
         if (activity == null) return;
-        activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
+        activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
         isLocked = false;
 
         //force send an UI orientation event when unlock
