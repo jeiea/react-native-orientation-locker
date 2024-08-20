@@ -12,6 +12,16 @@ A react-native module that can listen on orientation changing of device, get cur
 ### ChangeLog
 <details>
   <summary>ChangeLog details</summary>
+v1.7.0
+1. Add: Add support for new iOS orientation API on newer OS versions
+2. Fix: Fix reporting UI orientation upon unlock
+
+v1.6.0
+1. Add: Add vs2022 support. Remove unnecessary reference
+2. Fix: Change WindowsTargetPlatformVersion to 10.0
+3. Fix: added check for broadcast receiver being registered and unregistered to avoid IllegalArgumentException
+4. Fix: RN-0.73 change Android configs for RN 0.73 compatibility
+5. Fix: Add RECEIVER_EXPORTED/RECEIVER_NOT_EXPORTED to support Android 14
 
 v1.5.0
 1. Fix: threading issue on Windows and fix android not triggering event in some cases
